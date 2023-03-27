@@ -60,7 +60,6 @@ const Navbar:React.FC<NavbarProps> = ({active}) => {
           <NavbarItem label="Home" link='/'/>
           <NavbarItem label="All Song's" link='trending'/>
           <NavbarItem label="Sorted" link='sorted'/>
-          <NavbarItem label="My List" link='myList'/>
           <NavbarItem label="About Us" link='/'/>
         </div>
         <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
