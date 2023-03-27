@@ -1,0 +1,19 @@
+import useSWR from 'swr';
+import fetcher from '@/lib/fetcher';
+
+const useLoveSongs = () => {
+    const{data, error, isLoading, mutate} = useSWR('/api/songs/love', fetcher, {
+        revalidateIfStale: false,
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+    });
+
+    return {
+        data,
+        error,
+        isLoading,
+        mutate
+    }
+}
+
+export default useLoveSongs;
