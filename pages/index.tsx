@@ -30,7 +30,7 @@ export default function Home() {
     <>
       <Navbar active={false}/>
       <Billboard />
-      <div className='flex items-center justify-center w-full pb-8 pt-48 lg:pt-0'>
+      <div className='flex items-center justify-center w-full pb-8 pt-52 lg:pt-0'>
       <SongList title="Favourite's: " data={song}/>
       </div>
     </>
